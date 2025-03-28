@@ -5,14 +5,26 @@ server:
     session:
       timeout: 21600s
 
+#spring:
+#  application:
+#    name: prestamos
+#  datasource:
+#    driver-class-name: org.postgresql.Driver
+#    type: com.zaxxer.hikari.HikariDataSource
+#    jdbcUrl: jdbc:postgresql://localhost:5432/dllo_soluciones_prestamos
+#    username: postgres
+#    password: cali2021
+#    hikari:
+#      poolName: pool
+
 spring:
   application:
     name: prestamos
   datasource:
-    driver-class-name: org.postgresql.Driver
-    type: com.zaxxer.hikari.HikariDataSource
-    jdbcUrl: jdbc:postgresql://localhost:5432/dllo_soluciones_prestamos
+    url: jdbc:postgresql://localhost:5432/dllo_soluciones_prestamos
     username: postgres
-    password: cali2021
-    hikari:
-      poolName: pool
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true

@@ -9,14 +9,14 @@ import org.springframework.context.annotation.Configuration;
 
 import javax.sql.DataSource;
 
-@Configuration
-@ConfigurationProperties(prefix = "spring.datasource")
+//@Configuration
+//@ConfigurationProperties(prefix = "spring.datasource")
 public class ConfiguracionHikari extends HikariConfig {
     
-    @Value("${spring.datasource.hikari.poolName}")
+    //@Value("${spring.datasource.hikari.poolName}")
     private String poolName;
 
-    @Bean
+    //@Bean
     public DataSource dataSource() {
         int poolSize = Runtime.getRuntime().availableProcessors() * 2 + 1;
         setMaximumPoolSize(poolSize);
