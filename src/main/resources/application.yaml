@@ -13,6 +13,6 @@ spring:
     type: com.zaxxer.hikari.HikariDataSource
     jdbcUrl: jdbc:postgresql://localhost:5432/dllo_soluciones_prestamos
     username: postgres
-    password: root
+    password: cali2021
     hikari:
       poolName: pool
