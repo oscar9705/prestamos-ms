@@ -16,3 +16,7 @@ spring:
     password: root
     hikari:
       poolName: pool
+
+jwt:
+  secret: pr12312321ksuo12312321321312312321321l3k1l23jkl21jueba121321
+  expiration: 86400000
