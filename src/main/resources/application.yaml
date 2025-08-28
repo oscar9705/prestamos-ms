@@ -1,0 +1,18 @@
+server:
+  port: 8083
+  servlet:
+    context-path: /api-prestamos
+    session:
+      timeout: 21600s
+
+spring:
+  application:
+    name: prestamos
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    type: com.zaxxer.hikari.HikariDataSource
+    jdbcUrl: jdbc:postgresql://localhost:5432/dllo_soluciones_prestamos
+    username: postgres
+    password: root
+    hikari:
+      poolName: pool
